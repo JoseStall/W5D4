@@ -1,3 +1,8 @@
-<p>Salut à toi : <%= @user.name %></p>
+
+<div class="container">
+<div class="center-create">
+<p class="margin">Salut à toi : <%= @user.name %></p>
 <p>Voici ton ID : <%= @user.id %> Tu pourras t'en servir pour te connecter</p>
 <th><%= link_to 'Se connecter', session_new_path, class: 'btn btn-primary'%></th>
+</div>
+</div>
