@@ -1,20 +1,17 @@
-
-
 <div class="container">
-<% provide(:title, "Log in") %>
-<h1 class="t-center">Log in</h1>
+	<% provide(:title, "Log in") %>
+	<h1 class="t-center">Log in</h1>
 
-<div class="row">
- <div class="col-md-6 col-md-offset-3 b-center">
-   <%= form_for(:session, url: session_new_path) do |f| %>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 b-center">
+			<%= form_for(:session, url: session_new_path) do |f| %>
 
-     <%= f.text_field :id, class: 'form-control' %>
+			<%= f.text_field :id, class: 'form-control' %>
 
-   <p class="t-center">  <%= f.submit "Log in", class: "btn btn-primary" %></p>
-   <% end %>
+			<p class="t-center">  <%= f.submit "Log in", class: "btn btn-primary" %></p>
+			<% end %>
 
-   <p class="t-center">New user? <%= link_to "Sign up now!", user_new_path %></p>
- </div>
-</div>
-
+			<p class="t-center">New user? <%= link_to "Sign up now!", user_new_path %></p>
+		</div>
+	</div>
 </div>
