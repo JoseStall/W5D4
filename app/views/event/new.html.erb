@@ -1,16 +1,23 @@
-<div class="container">
-	<section>
-		<h2>Créer ton événement</h2>
-		<%= form_for @event, url: {action: "create"} do |f| %>
-			<%= f.label :description %>
-		  <%= f.text_field :description %>
-		  <%= f.label :date %>
-		    <%= f.date_field :date %>
-		    <%= f.label :place %>
-		      <%= f.text_field :place %>
+<div class='row'>
+	<div class="bg-light mt-1 p-5 col-lg-8">
+
+		<table class="table table-hover table-dark-ligth">
+			<div class="container">
+				<section>
+					<h2>Créer ton événement</h2>
+					<%= form_for @event, url: {action: "create"} do |f| %>
+					<br><%= f.label :description %>
+					<br><%= f.text_field :description %></br>
+					<br><%= f.label :date %>
+					<br>  <%= f.date_field :date %></br>
+					<br> <%= f.label :place %>
+					<br>   <%= f.text_field :place %></br>
 
 
-		  <%= f.submit "Create" %>
-		<% end %>
-	</section>
+					<br><%= f.submit "Create" %></br>
+					<% end %>
+				</section>
+			</div>
+		</table>
+	</div>
 </div>
