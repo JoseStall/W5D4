@@ -22,4 +22,16 @@ class EventController < ApplicationController
   	@user = User.all
   	
   end
+
+  	def create_event_user
+  	puts 'id event'
+  	puts params[:id]
+  	puts 'id_user'
+  	puts session[:user_id]
+  	@events_users = Events_users.new
+  	@events_users.event_id = params[:id]
+  	@events_users.user_id = session[:user_id]
+  	@events_users.save
+  	redirect_to event_show
+  	end
 end

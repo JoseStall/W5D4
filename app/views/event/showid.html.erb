@@ -8,6 +8,7 @@
 					<th scope="col">Date :</th>
 					<th scope="col">Lieu :</th>
 					<th scope="col">Créateur :</th>
+					<th scope="col">Participer :</th>
 
 				</tr>
 			</thead>
@@ -17,7 +18,9 @@
 				<th > <%= @event.date %></th>
 				<th > <%= @event.place %></th>
 				<th> <%= @user.find(@event.creator_id).name %></th>
+				<th><%= link_to 'Participer', ec_path, class: 'btn btn-success'%></th>
 			</tbody>
 		</table>
 	</div>
 </div>
+

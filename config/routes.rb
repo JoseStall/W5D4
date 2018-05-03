@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'event/show', to: 'event#show', as: 'event_show'
   get 'user/new' , to: 'user#new', as: 'user_new'
   get 'event/show/:id', to: 'event#showid', as:'event_showid'
+  get 'event/edit/:id', to: 'event#create_event_user', as: 'ec'
   post 'user/create', to: 'user#create'
   get 'user/show', to: 'user#show', as: 'user_show'
   get 'user/show/:id', to: 'user#showid', as:'user'
