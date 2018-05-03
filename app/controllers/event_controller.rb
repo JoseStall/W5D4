@@ -8,15 +8,9 @@ class EventController < ApplicationController
   	@event.description = params[:event][:description]
   	@event.date = params[:event][:date]
   	@event.place = params[:event][:place]
-  	@event.creator_id = 6
+  	@event.creator_id = session[:user_id]
   	@event.save
-  	puts 'voila les params'
-  	puts params
-  	puts 'session'
-  	puts params[:session]
-  	puts @current_user
-
-
+ 
   end
 
   def show
