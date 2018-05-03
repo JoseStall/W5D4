@@ -16,11 +16,11 @@ thplille@gmail.com
 
 
 <h2> Liste des choses à faire .
-   *Un repo sur github.
-   *Un lien vers Heroku
-   *bundle install --without production
-   *rails db:migrate
-<ul>
+   <br>*Un repo sur github.</br>
+   <br>*Un lien vers Heroku</br>
+   <br>*bundle install --without production </br>
+   <br>*rails db:migrate</br>
+
 <li>1. Models, signup, sign-in.
 
    *Création d'une app rails avec rails new  eventbrite-like.
@@ -38,9 +38,8 @@ thplille@gmail.com
 
 
    *dans les routes, je mets la méthode home au root du programme.
-</li></ul>
-<ul><li>
-2. Création d'événements
+
+<br> 2. Création d'événements
 
     *Installation de Bootstrap
    *Un header pour tout le site avec Bootsrap.
@@ -65,6 +64,6 @@ thplille@gmail.com
 
 </ul>
 <h2>Contributors</h2>
-   *@Kalejo<br>
-   *@Ampuero Pierre<br>
-   *@Guillaume<br>
+   <br>*@Kalejo</br>
+   <br>*@Ampuero Pierre</br>
+   <br>*@Guillaume</br>

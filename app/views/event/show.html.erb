@@ -19,7 +19,7 @@
 			<tbody>
 				<th > <%= t.id %></th>
 				<th > <%= t.description %></th>
-				<th > <%= t.date %></th>
+				<th > <%= t.date.to_formatted_s(:rfc822)   %></th>
 				<th > <%= t.place %></th>
 				<th> <%= @user.find(t.creator_id).name %></th>
 				<th><%= link_to 'Evenement', event_showid_path(t.id), class: 'btn btn-primary'%></th>
