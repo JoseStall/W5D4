@@ -1,4 +1,17 @@
 
+* {-moz-box-sizing: border-box; box-sizing: border-box;}
+
+
+
+footer {
+	color: #666A73 ;
+	border-top: #666A73 solid 6px;
+	background-color: #282C35;
+	width: 100% ;
+	bottom: 0;
+	position: relative;
+}
+
 
 .blue {
 	color: #0097e6 !important;
@@ -8,18 +21,18 @@
 }
 
 .carousel .carousel-item {
- 	height: 600px;
- 	 margin: 0 auto
+	height: 600px;
+	margin: 0 auto
 }
 
 .carousel-item img {
 	width: 100% !important;
 	height: 100% !important;
-   	position: absolute;
-   	top: 0;
-   	left: 0;
-   	min-height: 800px;
-   	margin: 0 auto
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 800px;
+	margin: 0 auto
 }
 
 footer {

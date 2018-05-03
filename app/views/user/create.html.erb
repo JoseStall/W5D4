@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 <div class="container">
 <div class="center-create">
 <p class="margin">Salut à toi : <%= @user.name %></p>
@@ -6,3 +7,21 @@
 <th><%= link_to 'Se connecter', session_new_path, class: 'btn btn-primary'%></th>
 </div>
 </div>
+=======
+<div class='row'>
+	<div class="bg-light mt-1 p-5 col-lg-8">
+
+		<table class="table table-hover table-dark-ligth">
+			<div class="container">
+				<p class="push">
+
+					<p>Salut à toi : <%= @user.name %></p>
+					<p>Voici ton ID : <%= @user.id %> Tu pourras t'en servir pour te connecter</p>
+					<th><%= link_to 'Se connecter', session_new_path, class: 'btn btn-primary'%></th>
+				</p>
+			</div>
+		</table>
+	</div>
+</div>
+
+>>>>>>> 652e35737a9b90eb3ab12d905ad6c1f79076b55c
