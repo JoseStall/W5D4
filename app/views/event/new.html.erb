@@ -1,8 +1,16 @@
-<%= form_for @event, url: {action: "create"} do |f| %>
-  <%= f.text_field :description %>
-    <%= f.date_field :date %>
-      <%= f.text_field :place %>
+<div class="container">
+	<section>
+		<h2>Créer ton événement</h2>
+		<%= form_for @event, url: {action: "create"} do |f| %>
+			<%= f.label :description %>
+		  <%= f.text_field :description %>
+		  <%= f.label :date %>
+		    <%= f.date_field :date %>
+		    <%= f.label :place %>
+		      <%= f.text_field :place %>
 
 
-  <%= f.submit "Create" %>
-<% end %>
+		  <%= f.submit "Create" %>
+		<% end %>
+	</section>
+</div>
