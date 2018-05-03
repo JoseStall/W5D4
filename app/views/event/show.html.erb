@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 4991a3f60018321d06cffe84a8c7d2360f349ebb
 <div class='row'>
 	<div class="bg-light mt-1 p-5 col-lg-8">
 		<table class="table table-hover table-dark-ligth">
@@ -19,7 +22,11 @@
 			<tbody>
 				<th > <%= t.id %></th>
 				<th > <%= t.description %></th>
+<<<<<<< HEAD
 				<th > <%= t.date.to_s(:db)    %></th>
+=======
+				<th > <%= t.date %></th>
+>>>>>>> 4991a3f60018321d06cffe84a8c7d2360f349ebb
 				<th > <%= t.place %></th>
 				<th> <%= @user.find(t.creator_id).name %></th>
 				<th><%= link_to 'Evenement', event_showid_path(t.id), class: 'btn btn-primary'%></th>
@@ -30,4 +37,8 @@
 			<% end %>
 		</table>
 	</div>
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> 4991a3f60018321d06cffe84a8c7d2360f349ebb
