@@ -1,4 +1,22 @@
-<%= form_for @user, url: {action: "create"} do |f| %>
-  <%= f.text_field :name %>
-  <%= f.submit "Create" %>
-<% end %>
+
+
+<div class="center">
+	<h1 class="down" style="color:#485460">Création d'un nouveau membre.</h1>
+	<br>
+
+
+	<h3>Bienvenue à toi !</h3>
+	<p>Bravo pour ta participation écris tes infos pour t'inscrire.</p>
+
+	<form>
+
+		<%= form_for @user, url: {action: "create"} do |f| %>
+
+		<b>Nom utilisateur</b><br>
+		<%= f.text_field :name %>
+		<div class="form-group">
+			<input type="submit" value="Valider">
+		</div></div>
+		<% end %>
+
+	</form>
