@@ -32,7 +32,11 @@
         <a class="nav-link blue " href="/contact">Inscription</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link blue" href="/contact">Connexion</a>
+        <% if logged_in? %>
+           <a class="nav-link blue" href="/contact">connection</a>
+        <% else %>
+           <a class="nav-link blue" href="/contact">Déconnection</a>
+        <% end %>
       </li>
 
     </ul>

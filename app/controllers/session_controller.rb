@@ -4,10 +4,14 @@ class SessionController < ApplicationController
   end
 
   def create
-  	   @user = User.find_by(id: params[:session][:id])
+  	   user = User.find_by(id: params[:session][:id])
+       puts user
   	   
-    if @user != nil
+    if user 
     	puts 'je suis connecté'
+      log_in user
+      redirect_to user
+
     	# Log the user in and redirect to the user's show page.
    else
        flash[:danger] = 'ID non valide'

@@ -15,4 +15,13 @@ class UserController < ApplicationController
   @user = User.all
     @events = Event.all
   end
+
+  def showid
+  	@user = User.find(params[:id])
+  	@event = Event.all
+    puts @current_user
+    puts params
+    puts params[:session]
+  	
+  end
 end

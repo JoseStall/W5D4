@@ -1,0 +1,50 @@
+<div class='row'>
+	<div class="bg-light mt-1 p-5 col-lg-8">
+		<table class="table table-hover table-dark-ligth">
+			<thead>
+				<tr>
+					<th scope="col"><span class="fi-media-play"></span>#</th>
+					<th scope="col">Name</th>
+				</tr>
+			</thead>
+			
+
+			<tbody>
+				<th > <%= @user.id %></th>
+				<th > <%= @user.name %></th>
+
+			</tbody>
+
+		</table>
+	</div>
+</div>
+<div>Voici la liste des événements que tu as crée :</div>
+
+<div class='row'>
+	<div class="bg-light mt-1 p-5 col-lg-8">
+		<table class="table table-hover table-dark-ligth">
+			<thead>
+				<tr>
+					<th scope="col"><span class="fi-media-play"></span>#</th>
+					<th scope="col">Evénement :</th>
+					<th scope="col">Date :</th>
+					<th scope="col">Lieu :</th>
+				</tr>
+			</thead>
+			<% @event.each do |t|
+			if t.creator_id == @user.id %>
+			<tbody>
+				<th > <%= t.id %></th>
+				<th > <%= t.description %></th>
+				<th > <%= t.date %></th>
+				<th > <%= t.place %></th>
+			
+			
+
+			</tbody>
+			<% end %>
+			<% end %>
+		</table>
+	</div>
+</div>
+				<th><%= link_to 'Par ici pour créer un événement', event_new_path, class: 'btn btn-primary'%></th>

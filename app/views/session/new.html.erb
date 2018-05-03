@@ -6,7 +6,7 @@
    <%= form_for(:session, url: session_new_path) do |f| %>
 
      <%= f.label :id %>
-     <%= f.text_field :id, class: 'form-control' %>
+     <%= f.text_field :user.id, class: 'form-control' %>
 
      <%= f.submit "Log in", class: "btn btn-primary" %>
    <% end %>

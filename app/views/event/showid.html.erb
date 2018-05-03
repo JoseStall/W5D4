@@ -8,24 +8,16 @@
 					<th scope="col">Date :</th>
 					<th scope="col">Lieu :</th>
 					<th scope="col">Créateur :</th>
-					<th scope="col">Lien vers :</th>
 
 				</tr>
 			</thead>
-			<% @event.each do |t| %>
-
 			<tbody>
-				<th > <%= t.id %></th>
-				<th > <%= t.description %></th>
-				<th > <%= t.date %></th>
-				<th > <%= t.place %></th>
-				<th> <%= @user.find(t.creator_id).name %></th>
-				<th><%= link_to 'Evenement', event_showid_path(t.id), class: 'btn btn-primary'%></th>
-
-
-
+				<th > <%= @event.id %></th>
+				<th > <%= @event.description %></th>
+				<th > <%= @event.date %></th>
+				<th > <%= @event.place %></th>
+				<th> <%= @user.find(@event.creator_id).name %></th>
 			</tbody>
-			<% end %>
 		</table>
 	</div>
 </div>
