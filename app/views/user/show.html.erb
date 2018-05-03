@@ -1,2 +1,23 @@
-<h1>User#show</h1>
-<p>Find me in app/views/user/show.html.erb</p>
+
+
+
+<div class='row'>
+	<div class="bg-light mt-1 p-5 col-lg-8">
+		<table class="table table-hover table-dark-ligth">
+			<thead>
+				<tr>
+					<th scope="col"><span class="fi-media-play"></span>#</th>
+					<th scope="col">Name</th>
+				</tr>
+			</thead>
+			<% @user.each do |t| %>
+
+			<tbody>
+				<th > <%= t.id %></th>
+				<th > <%= t.name %></th>
+
+			</tbody>
+			<% end %>
+		</table>
+	</div>
+</div>

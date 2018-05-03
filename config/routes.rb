@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
-  get 'event/new'
-  get 'event/create'
-  get 'event/show'
-  get 'user/new'
-  get 'user/create'
-  get 'user/show'
-  get 'static_pages/home'
+  get 'session/new', to: 'session#new', as: 'session_new'
+  post 'session/new', to: 'session#create'
+  get 'session/destroy', to: 'session#destroy', as: 'session_destroy'
+  get 'event/new', to: 'event#new', as: 'event_new'
+  get 'event/create', to: 'event#create', as: 'event_create'
+  get 'event/show', to: 'event#show', as: 'event_show'
+  get 'user/new' , to: 'user#new', as: 'user_new'
+  post 'user/create', to: 'user#create'
+  get 'user/show', to: 'user#show', as: 'user_show'
+  root to: 'static_pages#home' 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
